@@ -76,6 +76,11 @@ gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'rails-i18n', '~> 5.1'
 gem 'haml-rails'
+gem 'haml'
+
+group :development do
+  gem 'guard-livereload', '~> 2.5', require: false
+end
 
 # gem 'friendly_id', '~> 5.1.0'
 #
