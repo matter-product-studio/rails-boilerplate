@@ -10,6 +10,6 @@
   %body
     = render 'layouts/navbar' if user_signed_in?
     = render 'layouts/public_navbar' if !user_signed_in?
-    = flash_messages
     .container.mt-5
+      = flash_messages
       = yield
