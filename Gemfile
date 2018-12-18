@@ -80,6 +80,7 @@ gem 'haml'
 
 group :development do
   gem 'guard-livereload', '~> 2.5', require: false
+  gem 'rename'
 end
 
 # gem 'friendly_id', '~> 5.1.0'

@@ -24,6 +24,10 @@ Install foreman
 
 Note: This does not go in your `Gemfile`
 
+* Rename application
+`rails g rename:into My-App-Name`
+`rake db:setup`
+
 Run:
 `foreman start`
 
