@@ -27,6 +27,7 @@ Note: This does not go in your `Gemfile`
 * Rename application
 `rails g rename:into My-App-Name`
 `rake db:setup`
+`rails generate simple_form:install --bootstrap`
 
 Run:
 `foreman start`
