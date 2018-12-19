@@ -29,6 +29,8 @@ Note: This does not go in your `Gemfile`
 `rake db:setup`
 `rails generate simple_form:install --bootstrap`
 
+Rename your database in `config/database.yml`
+
 Run:
 `foreman start`
 
