@@ -31,6 +31,7 @@ Note: This does not go in your `Gemfile`
 
 Rename your database in `config/database.yml`
 
+
 Run:
 `foreman start`
 
@@ -39,4 +40,7 @@ For faster development, this application uses a livereloader plugin with Chrome.
 
 * Deployment instructions
 
+Quick Start Heroku
+
+`heroku apps:create myapp`
 * ...
