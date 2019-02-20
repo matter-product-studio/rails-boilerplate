@@ -32,3 +32,12 @@
 en:
   hello: "Hello world"
   company_name: "Matter Project"
+  date:
+    formats:
+      # Format to display dates as text
+      default: "%m/%d/%Y"
+      # Order to display date input fields
+      order:
+        - :month
+        - :day
+        - :year
