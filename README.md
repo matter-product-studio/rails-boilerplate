@@ -26,10 +26,10 @@ Note: This does not go in your `Gemfile`
 
 * Rename application
 `rails g rename:into My-App-Name`
+Rename your database in `config/database.yml`
 `rake db:setup`
 `rails generate simple_form:install --bootstrap`
 
-Rename your database in `config/database.yml`
 
 
 Run:
@@ -43,4 +43,21 @@ For faster development, this application uses a livereloader plugin with Chrome.
 Quick Start Heroku
 
 `heroku apps:create myapp`
-* ...
+`heroku rake db:migrate`
+
+
+* Custom domain
+To setup a custom domain with namecheap:
+
+*Heroku*
+- Under _Domains and certificates_ click Add domain
+- Make sure domain includes www
+
+
+*Namecheap*
+- Set redirect:
+`mydomain.tld -> www.mydomain.tld`
+
+- Advanced DNS
+`CNAME    |    www    |   xyz.herokudns.com.`
+`URL Redirect Record    |    @    |    http://www.mydomain.tld    |   Unmasked`

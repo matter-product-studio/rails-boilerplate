@@ -7,7 +7,10 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    / enable this line if you have font-awesome pro. Make sure to add your integrity key in your ENV file
+    = stylesheet_link_tag    'https://pro.fontawesome.com/releases/v5.7.2/css/all.css', media: 'all', 'data-turbolinks-track': 'reload', integrity:FONT_AWESOME_INTEGRITY, crossorigin: 'anonymous'
   %body
     = render 'layouts/navbar' if user_signed_in?
     = render 'layouts/public_navbar' if !user_signed_in?
