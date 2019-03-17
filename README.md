@@ -61,3 +61,8 @@ To setup a custom domain with namecheap:
 - Advanced DNS
 `CNAME    |    www    |   xyz.herokudns.com.`
 `URL Redirect Record    |    @    |    http://www.mydomain.tld    |   Unmasked`
+
+
+* Google Analytics
+
+Set the variable in the .env file
