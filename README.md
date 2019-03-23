@@ -63,6 +63,10 @@ To setup a custom domain with namecheap:
 `URL Redirect Record    |    @    |    http://www.mydomain.tld    |   Unmasked`
 
 
-* Google Analytics
+* Other Setup Steps
 
-Set the variable in the .env file
+- Google Analytics: Set the UA variable in the .env file
+- [Enable newrelic on heroku](https://elements.heroku.com/addons/newrelic); setup a synthetic monitor for uptime (keeps the heroku app from going to sleep, and is good to know if your site is down)
+
+
+

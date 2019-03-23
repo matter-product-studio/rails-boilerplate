@@ -78,6 +78,8 @@ gem 'rails-i18n', '~> 5.1'
 gem 'haml-rails'
 gem 'haml'
 
+gem 'newrelic_rpm'
+
 group :development do
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'rename'
