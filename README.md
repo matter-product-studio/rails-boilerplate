@@ -62,6 +62,12 @@ To setup a custom domain with namecheap:
 `CNAME    |    www    |   xyz.herokudns.com.`
 `URL Redirect Record    |    @    |    http://www.mydomain.tld    |   Unmasked`
 
+- Set email catchall to your email
+
+*SSL*
+- Make sure you setup Namecheap catchall email first
+- Follow [this heroku article](https://devcenter.heroku.com/articles/ssl-endpoint), however you will need to concat your .crt and your .ca-bundle possibly. That can be found [in this article](https://www.namecheap.com/support/knowledgebase/article.aspx/9756/33/installing-a-ssl-certificate-on-heroku-paid-ssl-endpoint). Note, you will not have to update your DNS records most likely, unless the generated Heroku endpoint changes.
+
 
 * Other Setup Steps
 
