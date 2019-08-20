@@ -26,6 +26,7 @@ Note: This does not go in your `Gemfile`
 
 * Rename application
 `rails g rename:into My-App-Name`
+Rename your display name in `config/locales/en.yml`
 Rename your database in `config/database.yml`
 `rake db:setup`
 `rails generate simple_form:install --bootstrap`
