@@ -25,11 +25,12 @@ Install foreman
 Note: This does not go in your `Gemfile`
 
 * Rename application
-`rails g rename:into My-App-Name`
-Rename your display name in `config/locales/en.yml`
-Rename your database in `config/database.yml`
-`rake db:setup`
-`rails generate simple_form:install --bootstrap`
+  `rails g rename:into My-App-Name`
+* Copy .env.template to .env
+* Rename your display name in `config/locales/en.yml`
+* Rename your database in `config/database.yml`
+* `rake db:setup`
+* `rails generate simple_form:install --bootstrap`
 
 
 
