@@ -29,7 +29,7 @@ Note: This does not go in your `Gemfile`
 
 * Rename application
   `rails g rename:into My-App-Name`
-* Copy .env.template to .env
+* `cp .env.template .env`
 * Rename your display name in `config/locales/en.yml`
 * Rename your database in `config/database.yml`
 * `rake db:setup`
@@ -45,10 +45,11 @@ For faster development, this application uses a livereloader plugin with Chrome.
 
 * Deployment instructions
 
-Quick Start Heroku
+Quick Start Heroku:
 
-`heroku apps:create myapp`
-`heroku rake db:migrate`
+* `heroku apps:create myapp`
+* `git push heroku`
+* `heroku rake db:migrate`
 
 
 * Custom domain
