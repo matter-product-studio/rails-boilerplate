@@ -78,6 +78,10 @@ gem 'rails-i18n'
 gem 'haml-rails'
 gem 'haml'
 
+#Optional
+gem 'ransack' #search and filtering
+# gem 'kaminari' #pagination
+
 gem 'newrelic_rpm'
 
 group :development do
