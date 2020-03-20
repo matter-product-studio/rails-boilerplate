@@ -20,7 +20,15 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Application setup
+*React setup (optional)*
+```
+bundle install
+rails webpacker:install
+rails webpacker:install:react
+rails generate react:install
+```
+
+*Application setup*
 Install foreman
 
 `gem install foreman`
@@ -37,7 +45,7 @@ Note: This does not go in your `Gemfile`
 
 
 
-Run:
+*Run:*
 `foreman start`
 
 * Services (job queues, cache servers, search engines, etc.)
@@ -52,13 +60,27 @@ Quick Start Heroku:
 * `heroku rake db:migrate`
 
 
-* Custom domain
+
+*React Getting Started*
+Generate a component:
+
+`rails g react:component HelloWorld greeting:string`
+
+Render it:
+
+```
+<!-- erb: paste this in view -->
+<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+```
+
+_source: https://github.com/reactjs/react-rails#5-generate-your-first-component_
+
+*Custom domain*
 To setup a custom domain with namecheap:
 
 *Heroku*
 - Under _Domains and certificates_ click Add domain
 - Make sure domain includes www
-
 
 *Namecheap*
 - Set redirect:
@@ -79,6 +101,3 @@ To setup a custom domain with namecheap:
 
 - Google Analytics: Set the UA variable in the .env file
 - [Enable newrelic on heroku](https://elements.heroku.com/addons/newrelic); setup a synthetic monitor for uptime (keeps the heroku app from going to sleep, and is good to know if your site is down)
-
-
-
