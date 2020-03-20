@@ -51,7 +51,7 @@ Note: This does not go in your `Gemfile`
 * Services (job queues, cache servers, search engines, etc.)
 For faster development, this application uses a livereloader plugin with Chrome. [Read more about it here](https://github.com/guard/guard-livereload). This is entirely optional.
 
-* Deployment instructions
+*Deployment instructions*
 
 Quick Start Heroku:
 
@@ -59,12 +59,16 @@ Quick Start Heroku:
 * `git push heroku`
 * `heroku rake db:migrate`
 
-
-
 *React Getting Started*
 Generate a component:
 
 `rails g react:component HelloWorld greeting:string`
+
+Load it:
+```
+<!-- application.html.erb in Head tag below turbolinks -->
+<%= javascript_pack_tag 'application' %>
+```
 
 Render it:
 
