@@ -1,25 +1,6 @@
 # TODO
 - Setup modal system to use easily
 
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
 *React setup (optional)*
 ```
 bundle install
@@ -58,6 +39,11 @@ Quick Start Heroku:
 * `heroku apps:create myapp`
 * `git push heroku`
 * `heroku rake db:migrate`
+
+*Setting up Production*
+
+- Run `RAILS_ENV=production rake secret` to generate a secret token
+- Edit the `.env` file and set SECRET_KEY_BASE="GENERATED_SECRET_TOKEN"
 
 *React Getting Started*
 Generate a component:

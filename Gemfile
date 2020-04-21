@@ -77,6 +77,7 @@ gem 'devise-bootstrap-views'
 gem 'rails-i18n'
 gem 'haml-rails'
 gem 'haml'
+gem 'dotenv-rails'
 
 #Optional
 gem 'ransack' #search and filtering
