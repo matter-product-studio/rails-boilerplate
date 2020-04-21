@@ -4,6 +4,7 @@
 *React setup (optional)*
 ```
 bundle install
+enable the gems for react and webpacker within Gemfile
 rails webpacker:install
 rails webpacker:install:react
 rails generate react:install
@@ -19,7 +20,7 @@ Note: This does not go in your `Gemfile`
 * Rename application
   `rails g rename:into My-App-Name`
 * `cp .env.template .env`
-* Rename your display name in `config/locales/en.yml`
+* Rename your company_name in `config/locales/en.yml`
 * Rename your database in `config/database.yml`
 * `rake db:setup`
 * `rails generate simple_form:install --bootstrap`
@@ -91,3 +92,4 @@ To setup a custom domain with namecheap:
 
 - Google Analytics: Set the UA variable in the .env file
 - [Enable newrelic on heroku](https://elements.heroku.com/addons/newrelic); setup a synthetic monitor for uptime (keeps the heroku app from going to sleep, and is good to know if your site is down)
+- Setup up time pinger with some service for heroku
